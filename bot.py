@@ -3,7 +3,8 @@ import asyncio
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
 
-TOKEN = "8783602062:AAHAYVlSEnEMIzuPDD67PAwQ-OqGLdcrwx4"
+import os
+TOKEN = os.getenv("TOKEN")
 
 users = {}
 
